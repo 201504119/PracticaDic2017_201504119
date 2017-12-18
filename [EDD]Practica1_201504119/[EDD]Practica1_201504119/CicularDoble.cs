@@ -110,7 +110,7 @@ namespace _EDD_Practica1_201504119
                 if (NodoCircular.enlaceparacola == null)
                 {
                     NodoCircular.enlaceparacola = nuevo;
-
+                   //jajajaConsole.WriteLine( NodoCircular.usuario + "->" + nuevo.valorcola);
                     Console.WriteLine("Valor circular " + NodoCircular.usuario +"_"+ NodoCircular.password);
                     Console.WriteLine("lo inserto en la Cola enlazada " + NodoCircular.enlaceparacola.valorcola);
                    

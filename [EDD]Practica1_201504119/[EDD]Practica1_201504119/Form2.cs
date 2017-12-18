@@ -15,7 +15,10 @@ namespace _EDD_Practica1_201504119
 {
     public partial class Form2 : Form
     {
+        string JSONFile;
+
         public Form2()
+        
 
       
         {
@@ -25,59 +28,63 @@ namespace _EDD_Practica1_201504119
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (StreamReader r = new StreamReader("C:\\Users\\lizzi\\Desktop\\file.json"))
-            {
-                string json = r.ReadToEnd();
-                dynamic array = JsonConvert.DeserializeObject(json);
-                foreach (var item in array)
-                {
-                    Console.WriteLine("{0} {1}", item.temp, item.vcc);
-                }
+            JSONFile = File.ReadAllText(@"C:\Users\lizzi\Desktop\ejemplo1.json");
+           
+            ExtraerArchivoJSON(JSONFile);
 
-            }
-
-            
 
 
         }
 
+        public void ExtraerArchivoJSON(string contenido)
+        {
+            try
+            {
+                var jUsuario = JsonConvert.DeserializeObject<ArchivoJson>(contenido);
+                Console.WriteLine("Objeto JSON: " + jUsuario.ToString());
+
+
+               
+                foreach (var cadamatrizenpila in jUsuario.archivo.pila.matrices.matriz)
+                {
+                    
+                    //Console.WriteLine("tamano de matriz de pila: " + cadamatrizenpila.size_x.ToString() + "-" + cadamatrizenpila.size_y.ToString() + "\n");
+                   
+                    foreach (var cadamatrizenpilasc in cadamatrizenpila.valores.valor)
+                    {
+                        //Console.Write(" Posicion y valor de matriz pila: " + cadamatrizenpilasc.dato.ToString() + "-" + cadamatrizenpilasc.pos_x.ToString() + "-" + cadamatrizenpilasc.pos_y.ToString() + "\n");
+                        
+                    }
+
+                }
+
+                
+
+                
+                foreach (var cadamatrizencola in jUsuario.archivo.cola.matrices.matriz)
+                {
+                    
+                    //Console.WriteLine("tamano de matriz de cola: " + cadamatrizencola.size_x.ToString() + "-" + cadamatrizencola.size_y.ToString() + "\n");
+                    
+                    foreach (var cadamatrizencolas in cadamatrizencola.valores.valor)
+                    {
+                       // Console.Write(" Posicion y valor de matriz cola: " + cadamatrizencolas.dato.ToString() + "-" + cadamatrizencolas.pos_x.ToString() + "-" + cadamatrizencolas.pos_y.ToString() + "\n");
+                       
+                    }
+                  
+                }
+
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.Write(ex.Message.ToString() + Environment.NewLine);
+
+            }
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-           
-                int count = 0;
-                int count2 = 0;
-                int inOrOut = 0;
-                int nRecords = 1;
-                JsonTextReader reader = new JsonTextReader(new StreamReader("C:\\Users\\lizzi\\Desktop\\file.json"));
-                string[] rawData = new string[5];
-                while (reader.Read())
-                {
-                    if (reader.Value != null)
-                        if (inOrOut == 1)
-                        {
-                            if (count == 6)
-                            {
-                                nRecords++;
-                                Array.Resize(ref rawData, nRecords);
-                                //textBox1.Text += "\r\n";
-                                count = 0;
-                            }
-                            rawData[count2] += reader.Value + ","; //+"\r\n"
-                            inOrOut = 0;
-                            count++;
-                            if (count2 == 500)
-                            {
-                                MessageBox.Show(rawData[499]);
-                            }
-                        }
-                        else
-                        {
-                            inOrOut = 1;
-                        }
-                }
-            for (int i =0; i< rawData.Length;i++) {
-                Console.WriteLine(rawData[i]);
-            }
+
         }
 
         private void button3_Click(object sender, EventArgs e)

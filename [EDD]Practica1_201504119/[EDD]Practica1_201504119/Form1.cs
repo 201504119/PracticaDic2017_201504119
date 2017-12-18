@@ -53,7 +53,7 @@ namespace _EDD_Practica1_201504119
             //listadoblecircular.InsertarEnlazadosCola("usuario3", 22);
             //listadoblecircular.InsertarEnlazadosPila("usuario3", 23);
 
-            //Matriz a = new Matriz();
+           // Matriz a = new Matriz();
            //a.CrearMatriz(5, 2, 0 );
             //listadoblecircular.MostrarEnlazadosCola();
             //listadoblecircular.MostrarEnlazadosPila();

@@ -37,7 +37,7 @@ namespace _EDD_Practica1_201504119
                     if (primeromatriz == null)
                     {
                         primeromatriz = nuevo;
-                        // Console.WriteLine(nuevo.valormatriz);
+                         Console.WriteLine(nuevo.valormatriz);
                     }
                     else {
                         NodoMatriz auxiliar1 = new NodoMatriz();
@@ -50,6 +50,7 @@ namespace _EDD_Practica1_201504119
                             }
                             auxiliar1.siguientematriz = nuevo;
                             nuevo.anteriormatriz = auxiliar1;
+                            //Console.WriteLine(nuevo.valormatriz);
 
                         }
                         else if (columna == 0)
@@ -60,7 +61,7 @@ namespace _EDD_Practica1_201504119
                             }
                             auxiliar1.abajomatriz = nuevo;
                             nuevo.arribamatriz = auxiliar1;
-                            // Console.WriteLine(nuevo.valormatriz);
+                             //Console.WriteLine(nuevo.valormatriz);
                         }
                         else {
                             while (auxiliar1.abajomatriz != null) {
