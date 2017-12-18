@@ -1,0 +1,12 @@
+c:\users\lizzi\onedrive\documentos\visual studio 2015\Projects\[EDD]Practica1_201504119\[EDD]Practica1_201504119\bin\Debug\[EDD]Practica1_201504119.exe.config
+c:\users\lizzi\onedrive\documentos\visual studio 2015\Projects\[EDD]Practica1_201504119\[EDD]Practica1_201504119\bin\Debug\[EDD]Practica1_201504119.exe
+c:\users\lizzi\onedrive\documentos\visual studio 2015\Projects\[EDD]Practica1_201504119\[EDD]Practica1_201504119\bin\Debug\[EDD]Practica1_201504119.pdb
+c:\users\lizzi\onedrive\documentos\visual studio 2015\Projects\[EDD]Practica1_201504119\[EDD]Practica1_201504119\obj\Debug\[EDD]Practica1_201504119.csprojResolveAssemblyReference.cache
+c:\users\lizzi\onedrive\documentos\visual studio 2015\Projects\[EDD]Practica1_201504119\[EDD]Practica1_201504119\obj\Debug\_EDD_Practica1_201504119.Properties.Resources.resources
+c:\users\lizzi\onedrive\documentos\visual studio 2015\Projects\[EDD]Practica1_201504119\[EDD]Practica1_201504119\obj\Debug\[EDD]Practica1_201504119.csproj.GenerateResource.Cache
+c:\users\lizzi\onedrive\documentos\visual studio 2015\Projects\[EDD]Practica1_201504119\[EDD]Practica1_201504119\obj\Debug\[EDD]Practica1_201504119.exe
+c:\users\lizzi\onedrive\documentos\visual studio 2015\Projects\[EDD]Practica1_201504119\[EDD]Practica1_201504119\obj\Debug\[EDD]Practica1_201504119.pdb
+c:\users\lizzi\onedrive\documentos\visual studio 2015\Projects\[EDD]Practica1_201504119\[EDD]Practica1_201504119\obj\Debug\_EDD_Practica1_201504119.Form1.resources
+C:\Users\lizzi\onedrive\documentos\visual studio 2015\Projects\[EDD]Practica1_201504119\[EDD]Practica1_201504119\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lizzi\onedrive\documentos\visual studio 2015\Projects\[EDD]Practica1_201504119\[EDD]Practica1_201504119\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lizzi\onedrive\documentos\visual studio 2015\Projects\[EDD]Practica1_201504119\[EDD]Practica1_201504119\obj\Debug\_EDD_Practica1_201504119.Form2.resources
